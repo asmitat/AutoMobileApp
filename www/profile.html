@@ -1,0 +1,317 @@
+  <html lang="en"><head>
+
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+      <meta charset="utf-8">
+
+      
+      <title>Profile </title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <meta name="description" content="Airport,Cafe,cinemas,hotels,resots.libraries,night clubs,business classified,easy,cms,installation,best">
+
+      <meta name="keywords" content="Airport,Cafe,cinemas,hotels,resots.libraries,night clubs,business classified,easy,cms,installation,best">
+
+      <meta name="revisit-after" content="3 days">
+
+      <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        
+      <script src="js/jquery-2.1.1.min.js"></script>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <!-- Styles -->
+      <!-- Bootstrap CSS -->
+      <style type="text/css">
+  @import url("main.css");
+  </style>
+      
+
+  <style>
+    
+  </style>
+   
+   
+
+
+
+
+  </head>
+
+  <body >
+
+   <div class="container">
+  
+          <div class="row">
+              
+                  <!-- Logo section -->
+                   
+    <div id="mySidenav" class="sidenavR">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+     <ul class="pull-left"  style="list-style-type:none !important"  >
+                   <li>
+                          <a href='profile.html'> 
+                            <i class="fa fa-user" style="color:white;font-size:20px;margin-right:10px; border:2px solid white;border-radius:25px;padding:6px"> </i>Profile</a>
+                       </li> 
+                        
+					 
+					   <li>
+                          <a href='placeorder.html'> 
+                            <i class="fa fa-shopping-cart" style="color:white;font-size:20px;margin-right:10px; border:2px solid white;border-radius:25px;padding:6px"> </i>Place Order</a>
+                       </li> 
+					      <li>
+                          <a href='myorder.html'> 
+                            <i class="fa fa-briefcase" style="color:white;font-size:20px;margin-right:10px; border:2px solid white;border-radius:25px;padding:6px"> </i>My Order</a>
+                       </li> 
+					  <!--  <li>
+                          <a href='index.html' id="logout"> 
+                            <i class="fa fa-sign-out" style="color:white;font-size:20px;margin-right:10px; border:2px solid white;border-radius:25px;padding:6px"> </i>Logout</a>
+                       </li> -->
+                     </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="container">
+
+    <div class="row" style="background-color:black">
+
+   
+
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+             
+      <button class="btn" style="font-size:18px;background:transparent ;color:white;margin-top:5px" onclick="openNav()"><i class="fa fa-bars"></i> </button> 
+
+    </div>
+
+       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="margin-top:0px;margin-left:0px">
+             
+    <center> <h4 style="color:white" > <i style="font-size:18px; color:white;margin-right:5px " class="fa fa-user" ></i> 
+    Profile </h4></center>
+
+    </div>
+
+   <!--  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+             
+    <a href="search.html"> <i class="fa fa-search" style="font-size:18px; color:white;margin-top:8px">    </i></a> 
+
+    </div>
+
+
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+             
+       <i class="fa fa-cog" style="font-size:18px; color:white;margin-top:8px">  </i>
+
+  </div> -->
+  </div>
+  </div>
+  </div>
+  <div class="container">
+  <br>
+  
+ 
+  
+        <div class="row" style="" >
+		
+   <div class="col-md-12 col-xs-12">
+    
+          <div class="well" >
+			<table class="table" id="example">
+					
+			</table>
+			<center><a href="" data-toggle="modal" data-target="#exampleModal3" class="btn btn-primary">Update</a></center>
+              </div>
+      </div>        
+          </div>
+
+  </div><tr>
+<!--End Modal-->
+<!--emailtemplate-edit modal-->   
+<div class="bd-example">
+ 
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content ">
+	  <form method="post">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="exampleModalLabel">Update Profile</h4>
+        </div>
+		
+        <div class="modal-body">
+        <form id="frmprofile" name="frmprofile">
+      <div class="fields">
+              <strong> Name </strong>
+              <input style="margin-top:10px;margin-bottom:10px" class="form-control" type="text" name="name" id="name" placeholder="Name " />
+      </div>
+      <div class="fields">
+              <strong> Firm Name </strong>
+              <input style="margin-top:10px;margin-bottom:10px" class="form-control" type="text" name="firm_name" id="firm_name" placeholder="Firm Name " />
+      </div>
+      <div class="fields">
+              <strong> Address </strong>
+              <textarea style="margin-top:10px;margin-bottom:10px" class="form-control" placeholder="Address" name="address" id="address" /></textarea>
+      </div>
+      
+      <div class="fields">
+              <strong> Email </strong>
+              <input style="margin-top:10px;margin-bottom:10px" class="form-control" type="email" name="email" id="email" placeholder="Email " />
+      </div>
+    
+    
+      <center><button type="submit" class="btn btn-primary">Update</button></center>
+
+        </form>
+    </div>
+  </div>
+</div>
+<!--End Modal-->
+  </body>
+
+  </html>
+
+    <script src="js/bootstrap.min.js"></script>
+      
+      <!-- Magnific Popup -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+      
+
+  <script type="text/javascript">
+
+  function openNav() {
+         document.getElementById("mySidenav").style.width = "100%";
+     }
+
+     function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+     }
+
+$(document).ready(function(){
+
+    var id = window.localStorage["id"];
+
+
+
+    
+    
+     
+
+
+ $.get("http://www.bramhodyogexpo.in/automobile/index.php/mobile/get_profile/"+id,
+              function(data,status){
+                  //console.log(data);
+                  var html='';
+                  var obj = JSON.parse(data);
+              $.each(obj, function(key,val) {
+                $("#name").val(val.name);
+                $("#firm_name").val(val.firm_name);
+                $("#address").val(val.address);
+                $("#email").val(val.email);
+                html+=' <tr><th>Name : </th><td>'+val.name+'</td></tr><tr><th>Address</th><td>'+val.address+'</td></tr><tr><th>Firm Name:</th><td>'+val.firm_name+'</td></tr><th>Mobile No:</th><td>'+val.phone+'</td></tr><tr><th>Email</th><td>'+val.email+'</td></tr>'
+              })
+              $("#example").html(html);
+                });
+    
+
+$("#frmprofile").submit(function(e){
+      e.preventDefault()
+    flag=true;
+    $("#frmprofile input").removeClass("text-danger")
+
+              if(flag==true && $("#name").val()=="")
+           {
+               $("#name").addClass('text-danger')
+              alert('Please Enter Name')
+               
+               $("#name").focus()
+               flag=false;
+           }
+
+            if(flag==true && $("#firm_name").val()=="")
+           {
+               $("#firm_name").addClass('text-danger')
+              alert('Please Enter Firm Name')
+               
+               $("#firm_name").focus()
+               flag=false;
+           }
+           
+          
+            if(flag==true && $("#address").val()=="")
+           {
+               $("#address").addClass('text-danger')
+              alert('Please Enter Address')
+               
+               $("#address").focus()
+               flag=false;
+           }
+
+            if(flag==true && $("#email").val()=="")
+           {
+               $("#email").addClass('text-danger')
+              alert('Please Enter Email')
+               
+               $("#email").focus()
+               flag=false;
+           }
+            if (flag==true)
+            {
+                var id=window.localStorage["id"];  
+                var senddata = $("#frmprofile").serialize();
+                $.post("http://www.bramhodyogexpo.in/automobile/index.php/mobile/complete_profile",senddata+'&id='+id)
+                .done(function(data){
+                     try{
+                        var jsondata = $.parseJSON(data)
+                        if(jsondata.status==true)
+                        {
+                                 //window.localStorage["username"] = jsondata.email;
+                              
+                              document.location.href="profile.html"  ;
+                         // console.log(jsondata.code);
+                        }
+                        else
+                        {
+                            
+                           alert(jsondata.reason);
+                        }
+                     }
+                     catch(e){}
+
+                })
+                .fail(function(){
+                    console.log("fail");
+                })
+
+            }
+            else
+            {
+                $("#regmsg").html("  Please Fill The all form ")
+            }
+
+    
+    })
+
+
+    })
+
+
+
+  </script>
+
+
+
+
+
+

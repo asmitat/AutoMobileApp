@@ -1,0 +1,251 @@
+  <html lang="en"><head>
+
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+      <meta charset="utf-8">
+
+      
+      <title>Sing In </title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <meta name="description" content="Airport,Cafe,cinemas,hotels,resots.libraries,night clubs,business classified,easy,cms,installation,best">
+
+      <meta name="keywords" content="Airport,Cafe,cinemas,hotels,resots.libraries,night clubs,business classified,easy,cms,installation,best">
+
+      <meta name="revisit-after" content="3 days">
+
+      <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        
+      <script src="js/jquery-2.1.1.min.js"></script>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <!-- Styles -->
+      <!-- Bootstrap CSS -->
+      <style type="text/css">
+  @import url("main.css");
+  </style>
+      
+
+  <style>
+    
+  </style>
+   
+   
+
+
+
+
+  </head>
+
+  <body >
+
+   
+
+
+  <div class="container">
+
+    <div class="row" style="background-color:black">
+
+   
+
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+             
+      
+    </div>
+
+       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="margin-top:0px;margin-left:0px">
+             
+    <center> <h4 style="color:white" > <i style="font-size:18px; color:white;margin-right:5px " class="fa fa-sign-in" ></i> 
+    COMPLETE PROFILE </h4></center>
+
+    </div>
+
+   <!--  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+             
+    <a href="search.html"> <i class="fa fa-search" style="font-size:18px; color:white;margin-top:8px">    </i></a> 
+
+    </div>
+
+
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+             
+       <i class="fa fa-cog" style="font-size:18px; color:white;margin-top:8px">  </i>
+
+  </div> -->
+  </div>
+  </div>
+  </div>
+  <div class="container">
+  <br>
+  
+ 
+  
+        <div class="row" style="" >
+		
+   <div class="col-md-12 col-xs-12">
+    
+          <div class="well" >
+			<form id="frmprofile" name="frmprofile">
+			<div class="fields">
+              <strong> Name </strong>
+              <input style="margin-top:10px;margin-bottom:10px" class="form-control" type="text" name="name" id="name" placeholder="Name " />
+      </div>
+      <div class="fields">
+              <strong> Firm Name </strong>
+              <input style="margin-top:10px;margin-bottom:10px" class="form-control" type="text" name="firm_name" id="firm_name" placeholder="Firm Name " />
+      </div>
+			<div class="fields">
+              <strong> Address </strong>
+              <textarea style="margin-top:10px;margin-bottom:10px" class="form-control" placeholder="Address" name="address" id="address" /></textarea>
+      </div>
+			
+			<div class="fields">
+              <strong> Email </strong>
+              <input style="margin-top:10px;margin-bottom:10px" class="form-control" type="email" name="email" id="email" placeholder="Email " />
+      </div>
+		
+		
+			<center><button type="submit" class="btn btn-primary">Submit</button></center>
+
+        </form>
+              </div>
+      </div>        
+          </div>
+
+  </div>
+
+  </body>
+
+  </html>
+
+    <script src="js/bootstrap.min.js"></script>
+      
+      <!-- Magnific Popup -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+    
+
+  <script type="text/javascript">
+
+    function openNav() {
+         document.getElementById("mySidenav").style.width = "100%";
+     }
+
+     function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+     }
+
+$(document).ready(function(){
+
+    var user = window.localStorage["username"];
+
+
+
+    
+    
+     if(user=="" || !user)
+    {
+       
+
+    }
+    else
+    {
+          
+    }
+
+    
+
+$("#frmprofile").submit(function(e){
+      e.preventDefault()
+    flag=true;
+    $("#frmprofile input").removeClass("text-danger")
+
+              if(flag==true && $("#name").val()=="")
+           {
+               $("#name").addClass('text-danger')
+              alert('Please Enter Name')
+               
+               $("#name").focus()
+               flag=false;
+           }
+
+            if(flag==true && $("#firm_name").val()=="")
+           {
+               $("#firm_name").addClass('text-danger')
+              alert('Please Enter Firm Name')
+               
+               $("#firm_name").focus()
+               flag=false;
+           }
+           
+          
+            if(flag==true && $("#address").val()=="")
+           {
+               $("#address").addClass('text-danger')
+              alert('Please Enter Address')
+               
+               $("#address").focus()
+               flag=false;
+           }
+
+            if(flag==true && $("#email").val()=="")
+           {
+               $("#email").addClass('text-danger')
+              alert('Please Enter Email')
+               
+               $("#email").focus()
+               flag=false;
+           }
+            if (flag==true)
+            {
+                var id=window.localStorage["id"];  
+                var senddata = $("#frmprofile").serialize();
+                $.post("http://www.bramhodyogexpo.in/automobile/index.php/mobile/complete_profile",senddata+'&id='+id)
+                .done(function(data){
+                     try{
+                        var jsondata = $.parseJSON(data)
+                        if(jsondata.status==true)
+                        {
+                                 //window.localStorage["username"] = jsondata.email;
+                              
+                              document.location.href="profile.html"  ;
+                         // console.log(jsondata.code);
+                        }
+                        else
+                        {
+                            
+                           alert(jsondata.reason);
+                        }
+                     }
+                     catch(e){}
+
+                })
+                .fail(function(){
+                    console.log("fail");
+                })
+
+            }
+            else
+            {
+                $("#regmsg").html("  Please Fill The all form ")
+            }
+
+    
+    })
+
+
+    })
+
+  </script>
+
+
+
+
+
+

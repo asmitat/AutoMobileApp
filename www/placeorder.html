@@ -1,0 +1,372 @@
+<html lang="en"><head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+
+    
+    <title>Place Orders </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Airport,Cafe,cinemas,hotels,resots.libraries,night clubs,business classified,easy,cms,installation,best">
+
+    <meta name="keywords" content="Airport,Cafe,cinemas,hotels,resots.libraries,night clubs,business classified,easy,cms,installation,best">
+
+    <meta name="revisit-after" content="3 days">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+      
+    <script src="js/jquery-2.1.1.min.js"></script>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+    <!-- Styles -->
+    <!-- Bootstrap CSS -->
+    <style type="text/css">
+@import url("main.css");
+</style>
+    
+
+<style>
+  
+</style>
+
+</head>
+
+<body>
+
+ <div class="container">
+        <div class="row">
+    
+                <!-- Logo section -->
+                 
+  <div id="mySidenav" class="sidenavR">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+   <ul class="pull-left"  style="list-style-type:none !important"  >
+                       
+
+
+                       <li>
+                          <a href='profile.html'> 
+                            <i class="fa fa-user" style="color:white;font-size:20px;margin-right:10px; border:2px solid white;border-radius:25px;padding:6px"> </i>Profile</a>
+                       </li> 
+                        
+					 
+					   <li>
+                          <a href='placeorder.html'> 
+                            <i class="fa fa-shopping-cart" style="color:white;font-size:20px;margin-right:10px; border:2px solid white;border-radius:25px;padding:6px"> </i>Place Order</a>
+                       </li> 
+					      <li>
+                          <a href='myorder.html'> 
+                            <i class="fa fa-briefcase" style="color:white;font-size:20px;margin-right:10px; border:2px solid white;border-radius:25px;padding:6px"> </i>My Order</a>
+                       </li> 
+					   <!-- <li>
+                          <a href='index.html' id="logout"> 
+                            <i class="fa fa-sign-out" style="color:white;font-size:20px;margin-right:10px; border:2px solid white;border-radius:25px;padding:6px"> </i>Logout</a>
+                       </li> -->
+                     </ul> 
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container">
+
+  <div class="row" style="background-color:black">
+
+ 
+
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+           
+    <button class="btn" style="font-size:18px;background:transparent ;color:white;margin-top:5px" onclick="openNav()"><i class="fa fa-bars"></i> </button> 
+
+  </div>
+
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="margin-top:0px;margin-left:0px">
+           
+  <center> <h4 style="color:white" > <i style="font-size:18px; color:white;margin-right:5px " class="fa fa-shopping-cart " ></i>Place order </h4></center>
+
+  </div>
+
+ <!--  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+           
+  <a href="search.html"> <i class="fa fa-search" style="font-size:18px; color:white;margin-top:8px">    </i></a> 
+
+  </div>
+
+
+  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+           
+     <i class="fa fa-cog" style="font-size:18px; color:white;margin-top:8px">  </i>
+
+</div> -->
+</div>
+</div>
+
+  <div class="container">
+ <!-- <center><button type="button" style="background:#fc913a;color:white;margin-top:10px" class="btn btn-md" data-toggle="modal" data-target="#myModal">Add Lead</button></center> -->
+<div class="row">
+
+        <div  class="col-md-12" style="margin-top:30px"  >
+
+
+        <div class="invoices">
+
+          <div class="row">
+
+            <div class="col-md-12 col-xs-12">
+            <form name="frmplaceorder" id="frmplaceorder">
+        <div class="fields">
+              <strong> Vehicle Brand </strong>
+              <select style="margin-top:10px;margin-bottom:10px" class="form-control" name="select_brand" id="select_brand" >
+			 
+			  </select>
+            </div>
+			 <div class="fields">
+              <strong> Vehicle Type</strong>
+              <select style="margin-top:10px;margin-bottom:10px" class="form-control" name="select_type" id="select_type" >
+			  		  
+			  </select>
+            </div>
+			 <div class="fields">
+              <strong>Vehicle</strong>
+              <select style="margin-top:10px;margin-bottom:10px" class="form-control" name="select_vehicle" id="select_vehicle" >
+			  		 
+			  </select>
+            </div>
+
+        <div class="fields">
+              <strong> Product</strong>
+              <select style="margin-top:10px;margin-bottom:10px" class="form-control" name="select_product" id="select_product">
+               
+        </select>
+       
+            </div>    
+			  <div id="plist" class="fields">
+       
+        </div>
+         <input type="hidden" name="productcount" id="productcount" value="0">
+        <br><br>
+<center><button type="submit" class="btn btn-primary btn-md"> Save</button></center>
+          </div>
+          </form>
+        </div>
+</div>
+
+
+ </div>
+
+           
+          </div>
+          
+</div>
+
+
+
+
+</body>
+
+</html>
+
+  <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+
+
+<script type="text/javascript">
+
+
+
+
+  function openNav() {
+       document.getElementById("mySidenav").style.width = "100%";
+   }
+
+   function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+   }
+
+$(document).ready(function(){
+
+    var id = window.localStorage["id"];
+
+
+$.get("http://www.bramhodyogexpo.in/automobile/index.php/mobile/get_brand",
+              function(data,status){
+                  //console.log(data);
+                  var html='<option value="0">Select</option>';
+                  var obj = JSON.parse(data);
+                  
+              $.each(obj, function(key,val) {
+               html+='<option value="'+val.ID+'">'+val.brand_name+'</option>'
+              })
+              $("#select_brand").html(html);
+      });
+
+$.get("http://www.bramhodyogexpo.in/automobile/index.php/mobile/get_vehicletype",
+              function(data,status){
+                  //console.log(data);
+                  var html='<option value="0">Select</option>';
+                  var obj = JSON.parse(data);
+                  
+              $.each(obj, function(key,val) {
+               html+='<option value="'+val.ID+'">'+val.vehicle_type+'</option>'
+              })
+              $("#select_type").html(html);
+      });
+
+$.get("http://www.bramhodyogexpo.in/automobile/index.php/mobile/get_vehicle",
+              function(data,status){
+                  //console.log(data);
+                  var html='<option value="0">Select</option>';
+                  var obj = JSON.parse(data);
+                 
+              $.each(obj, function(key,val) {
+               html+='<option value="'+val.ID+'">'+val.name+'</option>'
+              })
+              $("#select_vehicle").html(html);
+      });
+
+function select_product()
+{
+  var brand=$("#select_brand").val();
+  var type=$("#select_type").val();
+  var vehicle=$("#select_vehicle").val();
+  $.get("http://www.bramhodyogexpo.in/automobile/index.php/mobile/get_products/"+brand+"/"+type+"/"+vehicle,
+              function(data,status){
+                  //console.log(data);
+                  var html='<option value="0">Select</option>';
+                  var obj = JSON.parse(data);
+                  if(obj.length==0)
+                  {
+                    html+='<option value="" >No product found</option>'
+                  }
+                  else
+                  {
+                    $.each(obj, function(key,val) {
+                   html+='<option value="'+val.ID+'" data-val="'+val.product_no+'">'+val.product_no+'</option>'
+                  })
+                  }
+
+               
+              $("#select_product").html(html);
+      });
+
+}
+
+
+$("#select_brand").on("change",function(){
+  select_product();
+});
+$("#select_type").on("change",function(){
+  select_product();
+});
+$("#select_vehicle").on("change",function(){
+  select_product();
+});
+
+$("#select_product").on("change",function(){
+var val=$("#select_product").val();
+var extra=$(this).find('option:selected');
+var product_no= extra.data('val'); 
+i=parseInt($("#productcount").val());
+i++;
+$("#productcount").val(i);
+var html='<div class="row"><div class="col-sm-6 col-md-6 col-lg-6"><strong>Product</strong><input type="text" value="'+product_no+'" readonly name="product'+i+'" class="form-control"/><input type="hidden" name="product_id'+i+'" value="'+val+'"></div><div class="col-sm-6 col-md-6 col-lg-6"> <strong>Quantity</strong><input type="text" value="1" class="form-control" name="quantity'+i+'"/></div></div>'
+ $("#plist").append(html)   
+});
+
+
+$("#frmplaceorder").submit(function(e){
+      e.preventDefault()
+    flag=true;
+
+      if(flag==true && $("#select_brand").val()==0)
+           {
+               $("#select_brand").addClass('text-danger')
+              alert('Please Select Brand')
+               
+               $("#select_brand").focus()
+               flag=false;
+           }
+
+        if(flag==true && $("#select_type").val()==0)
+           {
+               $("#select_type").addClass('text-danger')
+              alert('Please Select Vehicle Type')
+               
+               $("#select_type").focus()
+               flag=false;
+           }  
+
+         if(flag==true && $("#select_vehicle").val()==0)
+           {
+               $("#select_vehicle").addClass('text-danger')
+              alert('Please Select Vehicle')
+               
+               $("#select_vehicle").focus()
+               flag=false;
+           }  
+
+            if(flag==true && $("#select_product").val()==0)
+           {
+               $("#select_product").addClass('text-danger')
+              alert('Please Select Product')
+               
+               $("#select_product").focus()
+               flag=false;
+           }     
+
+    $("#frmplaceorder input").removeClass("text-danger")
+
+            if (flag==true)
+            {
+                var id=window.localStorage["id"];  
+                var senddata = $("#frmplaceorder").serialize();
+                 console.log(senddata);
+                $.post("http://www.bramhodyogexpo.in/automobile/index.php/mobile/place_order",senddata+'&id='+id)
+                .done(function(data){
+                     try{
+                        var jsondata = $.parseJSON(data)
+                        if(jsondata.status==true)
+                        {
+                                 //window.localStorage["username"] = jsondata.email;
+                              
+                              document.location.href="myorder.html";
+                         // console.log(jsondata.code);
+                        }
+                        else
+                        {
+                            
+                           alert(jsondata.reason);
+                        }
+                     }
+                     catch(e){}
+
+                })
+                .fail(function(){
+                    console.log("fail");
+                })
+
+            }
+            else
+            {
+                $("#regmsg").html("  Please Fill The all form ")
+            }
+
+    
+    })
+
+})
+
+</script>
